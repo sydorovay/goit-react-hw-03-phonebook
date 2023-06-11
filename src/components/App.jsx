@@ -87,4 +87,3 @@ App.propTypes = {
 };
 
 export default App;
-ЦЦЦЦЦЦЦЦЦЦ
