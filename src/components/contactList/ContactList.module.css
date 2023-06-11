@@ -1,0 +1,25 @@
+.contact-list {
+list-style: none;
+	padding: 0;
+}
+
+.contact-list-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+.contact-list-item:last-child {
+	border-bottom: none;
+}
+
+.contact-name {
+	font-weight: 700;
+}
+
+.delete-button {
+	color: red;
+	cursor: pointer;
+}
