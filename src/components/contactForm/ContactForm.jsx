@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import styles from './ContactForm.module.css';
+import { FcBusinessContact, FcCellPhone } from 'react-icons/fc';
 
 const ContactForm = ({ addContact }) => {
   const [name, setName] = useState('');
@@ -25,6 +26,7 @@ const ContactForm = ({ addContact }) => {
     <div className={styles.container}>
       <form onSubmit={handleSubmit}>
         <label className={styles.inputLabel}>
+          <FcBusinessContact size={24} />
           Name:
           <input
             className={styles.inputField}
@@ -39,6 +41,7 @@ const ContactForm = ({ addContact }) => {
         </label>
         <br />
         <label className={styles.inputLabel}>
+          <FcCellPhone size={24} />
           Number:
           <input
             className={styles.inputField}

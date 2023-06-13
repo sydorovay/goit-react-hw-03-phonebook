@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { v4 as uuid } from 'uuid';
-import PropTypes from 'prop-types';
 import ContactForm from './contactForm/ContactForm';
 import ContactList from './contactList/ContactList';
 import Filter from './filter/Filter';
+ import { FcSearch } from 'react-icons/fc';
 
 const App = () => {
   const state = {
@@ -58,7 +58,10 @@ const App = () => {
     <div>
       <h1>Phonebook</h1>
       <ContactForm addContact={addContact} />
-      <h2>Contacts</h2>
+      <h2>
+        <FcSearch size={24} /> Contacts{' '}
+      </h2>
+
       <Filter
         filter={filter}
         number={numberFilter}
