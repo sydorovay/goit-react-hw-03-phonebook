@@ -70,20 +70,4 @@ const App = () => {
   );
 };
 
-App.propTypes = {
-  contacts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      number: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-  filter: PropTypes.string.isRequired,
-  numberFilter: PropTypes.string.isRequired,
-  addContact: PropTypes.func.isRequired,
-  deleteContact: PropTypes.func.isRequired,
-  handleFilterChange: PropTypes.func.isRequired,
-  handleNumberFilterChange: PropTypes.func.isRequired,
-};
-
 export default App;
