@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Filter.module.css';
 
-const Filter = ({ filter, number, onChange, onNumberChange }) => {
+export const Filter = ({ filter, number, onChange, onNumberChange }) => {
   return (
     <div className={styles.container}>
       <div className={styles.subfilter}>
@@ -35,5 +35,3 @@ Filter.propTypes = {
   onChange: PropTypes.func.isRequired,
   onNumberChange: PropTypes.func.isRequired,
 };
-
-export default Filter;

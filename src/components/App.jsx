@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { v4 as uuid } from 'uuid';
-import ContactForm from './contactForm/ContactForm';
-import ContactList from './contactList/ContactList';
-import Filter from './filter/Filter';
- import { FcSearch } from 'react-icons/fc';
+import {ContactForm} from 'components/contactForm/ContactForm';
+import {ContactList} from './contactList/ContactList';
+import {Filter} from './filter/Filter';
+import { FcSearch } from 'react-icons/fc';
 
-const App = () => {
+export const App = () => {
   const state = {
     contacts: [
       { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -73,4 +73,3 @@ const App = () => {
   );
 };
 
-export default App;

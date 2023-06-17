@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styles from './ContactForm.module.css';
 import { FcBusinessContact, FcCellPhone } from 'react-icons/fc';
 
-const ContactForm = ({ addContact }) => {
+export const ContactForm = ({ addContact }) => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
@@ -67,4 +67,4 @@ ContactForm.propTypes = {
   addContact: PropTypes.func.isRequired,
 };
 
-export default ContactForm;
+
